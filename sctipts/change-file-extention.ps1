@@ -8,7 +8,7 @@
 # 拡張子をoptionalな引数にする
 
 # 対象ディレクトリ
-cd "C:\Users\yosuke adachi\Dropbox\personal\wallpapers"
+cd "C:\Users\yosuke.adachi\OneDrive - Avanade\wallpaper"
 
 # ファイルを取得, ディレクトリは対象外
 $files = Get-ChildItem * | Where-Object { ! $_.PSIsContainer }
