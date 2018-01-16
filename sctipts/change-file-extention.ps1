@@ -1,14 +1,17 @@
-﻿# 2017/10/02
-# 拡張子なしのファイルに拡張子jpgを付与
-# 拡張子付与後に同名ファイルが存在する場合は付与しない動作
+﻿
+# spotlightの画像を保存する
+# 対象フォルダのファイルに拡張子jpgを付与してファイルを識別する
+# あとは壁紙にでも...
 
-# TODO
-# 引数で対象ディレクトリのパスを受けるようにする
-# 拡張子付与後に同名ファイルが存在する場合は削除 or 上書きする
-# 拡張子をoptionalな引数にする
+# 使い方
+# 1, 400kb以上のファイルを対象フォルダにコピーします(#spotlightに表示されるファイルである確率が高い)
+# 2, scriptを実行します
 
-# 対象ディレクトリ
-cd "C:\Users\yosuke adachi\Dropbox\personal\wallpapers"
+# spotlightのきれいな画像はここにあります
+# C:\Users\doruj\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets
+
+# 対象フォルダ
+cd "C:\Users\doruj\Dropbox\personal\wallpapers"
 
 # ファイルを取得, ディレクトリは対象外
 $files = Get-ChildItem * | Where-Object { ! $_.PSIsContainer }
